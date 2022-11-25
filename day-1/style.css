@@ -2,6 +2,7 @@ body {
   background-color: rgb(180, 220, 180);
   font-size: 100%;
   font-family: "Roboto";
+  margin: 50px;
 }
 h1 {
   display: flex;
@@ -47,4 +48,18 @@ li {
 }
 #p2 {
   font-family: "Rubik Distressed";
+}
+img {
+  width: 300px;
+  height: 300px;
+  border-radius: 200px;
+}
+.ro {
+  display: flex;
+
+  justify-content: end;
+}
+#rot {
+  display: flex;
+  justify-content: start;
 }
