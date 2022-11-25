@@ -1,6 +1,7 @@
 body {
   background-color: rgb(180, 220, 180);
   font-size: 100%;
+  font-family: "Roboto";
 }
 h1 {
   display: flex;
@@ -43,4 +44,7 @@ li {
 #p1:hover {
   background-color: plum;
   cursor: -webkit-zoom-out;
+}
+#p2 {
+  font-family: "Rubik Distressed";
 }
