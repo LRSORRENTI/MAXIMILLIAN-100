@@ -18,8 +18,76 @@
       <p>First let's clarify what these terms actually mean</p>
       <p>
         <b> DEPLOYING A WEBSITE </b>
-        ,when we deploy a website we move the website code onto a remote machine
+      </p>
+      <p>
+        When we deploy a website we move the website code onto a remote machine
         ("server") that serves the website to visitors
+      </p>
+      <p>
+        <b> Hosting </b>
+      </p>
+      <p>
+        When we host a website, the remote machine ("server") hosts or stores
+        the website code and serves it to the visitors
+      </p>
+      <p>
+        The main takeaway is that if we want to actually make our website
+        visible to others, it needs to be both hosted and deployed
+      </p>
+      <p>
+        So when we go to amazon.com a request is sent to amazon's servers, and
+        since amazon took their website code and moved it onto a server, our
+        browswer is able to send a request there, and the server bought by
+        amazon, which hosts that website is then able to send that website back
+        to you, the html, css instructions
+      </p>
+    </div>
+    <div class="container">
+      <h2>Deploying on NETLIFY</h2>
+      <p>
+        All we need to do is drag our folder that contains our html, css, and js
+        and drop it into the upload section, and that's it, netlify will give a
+        confirmation that your site is now live at
+        http://example-site.netlify.app, or whatever domain name netlify will
+        auto-generate for you
+      </p>
+      <p>
+        In order to chamge our domain name, we do need to sign up and actually
+        buy a domain, which will then offer HTTPS, versioning, rollbacks and
+        more
+      </p>
+    </div>
+    <div class="container">
+      <h2>FAVICONS</h2>
+      <p>
+        Most websites will configure a favicon, which is a small icon in the
+        browswer tab section, for github it's the small cat logo, for stack
+        overflow it's the orange half-moon shape stack icon, and for udemy it's
+        the purple u icon
+      </p>
+      <p>
+        If we don't set one, nothing breaks or anything, but we can add one
+        easily
+      </p>
+      <p>
+        Google favicon generator, then go to one of the websites and we can
+        upload an image, and then the generator will return a generated favicon
+        based on the image uploaded
+      </p>
+      <p>
+        favicon.io is a good choice, after we generate and download our favicon,
+        we add it into our project folder at the root or in the images folder
+      </p>
+      <p>
+        Now to add the favicon we go into our html, and under the link to our
+        stylesheet, we add another link, but we change the "rel" to "rel="icon""
+        and href="myfavicon.ico" then we set type="image/x-icon"
+      </p>
+      <p>
+        It's easier to copy / paste what favicon.io will display after
+        generation, because favicon.io will also include 'link rel' that will
+        configure your icon on all types of devices and platforms, so it's
+        auto-optimized for whatever kind of device the user is viewing it on
       </p>
     </div>
   </body>
