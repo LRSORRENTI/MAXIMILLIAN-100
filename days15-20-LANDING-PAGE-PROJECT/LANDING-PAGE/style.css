@@ -1,6 +1,6 @@
 #hero {
   height: 800px;
-  background-image: url("/days15-20-LANDING-PAGE-PROJECT/images/places/photo-1506886009355-7f3af05dd5d2.avif");
+  background-image: url("/days15-20-LANDING-PAGE-PROJECT/images/places/mtrushmore.avif");
   background-position: center;
   background-size: cover;
 }
@@ -44,4 +44,21 @@
 
 #hero-content a:hover {
   background-color: rgb(151, 60, 54);
+}
+
+#destinations {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.destination {
+  margin: 0 20px;
+}
+
+.destination img {
+  height: 400px;
+  width: 400px;
 }
