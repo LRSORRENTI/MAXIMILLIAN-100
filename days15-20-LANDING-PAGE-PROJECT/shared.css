@@ -3,18 +3,34 @@ body {
   margin: 0;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+}
+
+#page-logo a {
+  padding: 10px;
+  font-family: "Oleo Script", sans-serif;
+  color: rgb(121, 29, 23);
+  font-size: 50px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: 4px 4px 6px rgb(5, 14, 24);
+}
 ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-#page-logo a {
-  padding: 10px;
-  font-family: "Oleo Script", sans-serif;
-  color: rgb(245, 243, 160);
-  font-size: 50px;
-  text-decoration: none;
-  text-transform: uppercase;
-  text-shadow: 4px 4px 6px rgb(73, 3, 119);
+header ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+header li {
+  margin-left: 20px;
 }
