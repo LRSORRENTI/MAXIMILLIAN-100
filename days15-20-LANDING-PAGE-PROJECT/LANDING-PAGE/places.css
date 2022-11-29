@@ -54,6 +54,10 @@ main li img {
   justify-content: space-between;
 }
 
+.loc-description h2 {
+  margin: 0;
+}
+
 .actions {
   color: rgb(53, 61, 70);
 }
