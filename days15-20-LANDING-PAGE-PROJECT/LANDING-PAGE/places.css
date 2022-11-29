@@ -18,14 +18,44 @@ main ul {
 
 main li {
   display: flex;
-  background-color: #ffff;
+  background: linear-gradient(
+    20deg,
+    rgb(223, 185, 182),
+    #ffff,
+    rgb(179, 195, 214)
+  );
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  overflow: hidden;
 }
 
 main li img {
-  width: 300px;
-  height: 280px;
+  width: 50%;
+  height: 50%;
 }
 
 .loc-description {
   padding: 25px;
+  color: rgb(53, 61, 70);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.actions {
+  text-align: right;
+  color: rgb(53, 61, 70);
+}
+
+.actions a {
+  text-decoration: none;
+  padding: 8px;
+  font-weight: bolder;
+  color: rgb(121, 29, 23);
+  border-radius: 4px;
+}
+
+.actions a:hover {
+  background-color: rgb(121, 29, 23);
+  color: #ffff;
 }
