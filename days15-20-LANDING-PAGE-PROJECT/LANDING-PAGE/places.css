@@ -1,0 +1,17 @@
+body {
+  background: linear-gradient(
+    90deg,
+    rgb(223, 185, 182),
+    #ffff,
+    rgb(179, 195, 214)
+  );
+}
+
+header {
+  position: static;
+}
+
+main li img {
+  width: 300px;
+  height: 280px;
+}
