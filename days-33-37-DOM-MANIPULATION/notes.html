@@ -33,10 +33,20 @@
       .container {
         margin-top: 40px;
         border: 1px solid white;
+        width: 700px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 40px
+  
       }
       li{
         font-size: 1.5rem;
       }
+  
+
     </style>
     <div class="container">
       <h1>
@@ -60,6 +70,23 @@
                 document
             </li>
         </ul>
+      </p>
+      <p>
+        These variables store objects inside them, and 
+        they in turn contain built in functions
+      </p>
+      <p>
+        The global window object itself holds information 
+        and functionality related to the active browser window 
+        & tab
+      </p>
+      <p>
+        If we console.log(window) in our js file, the 
+        console will display all the properties and 
+        methods inside of the window object, don't 
+        be intimidated, most developers won't need to know 
+        all the properties and methods of the window object 
+        by heart 
       </p>
     </div>
   </body>
