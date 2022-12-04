@@ -14,7 +14,8 @@
         color: #ffff;
       }
       h1 {
-        font-size: 4rem;
+        font-size: 3rem;
+       
       }
 
       h2 {
@@ -25,7 +26,6 @@
         display: flex;
         justify-content: center;
       }
-      h1,
       h2 {
         display: flex;
         justify-content: center;
@@ -46,6 +46,11 @@
         font-size: 1.5rem;
       }
   
+      @media screen and (max-width: 760px) {
+        .container {
+          width: 70%;
+        }
+      }
 
     </style>
     <div class="container">
@@ -88,6 +93,30 @@
         all the properties and methods of the window object 
         by heart 
       </p>
+      <p>
+        The main object we'll use frequently is the 'document'
+        object, or the document property on the window object
+      </p>
+      <p>
+        This document object is a 'nested object' because 
+        it's an object inside of another object
+      </p>
+      <p>
+        And this document onject contains info and functionality 
+        of the loaded website content
+      </p>
+      <p>
+        This is what allows us to gain access to 
+        html elements with methods like:
+      </p>
+      <ul>
+        <li>
+            getElementById()
+        </li>
+        <li>
+            getElementByClassName()
+        </li>
+      </ul>
     </div>
   </body>
 </html>
