@@ -14,7 +14,7 @@
     <title>BOOTSTRAP VERSION</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-md bg-dark">
+    <nav class="navbar navbar-expand-md bg-dark sticky-top">
       <div class="container-fluid">
         <a class="navbar-brand text-warning" style="font-size: 1.5rem" href="#"
           >PROTEIN</a
@@ -82,9 +82,52 @@
         padding: 30px;
         margin: 30px;
       }
+      img {
+        width: 50%;
+        height: 50%;
+      }
     </style>
     <h1>CHOOSE YOUR PROTEIN</h1>
-
+    <div class="container">
+      <div class="card-group">
+        <div class="card bg-dark">
+          <img
+            src="/images/white-icon-meat.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title d-flex justify-content-center mb-4">
+              Meat-Based
+            </h5>
+            <p class="card-text">
+              Animal proteins are complete proteins. That means they contain all
+              the essential amino acids that you need in your diet
+            </p>
+            <p class="card-text">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </p>
+          </div>
+        </div>
+        <div class="card bg-dark">
+          <img
+            src="/images/veggies.jpg.crdownload"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title d-flex justify-content-center">
+              Vegetable-Based
+            </h5>
+            <p class="card-text">
+              Plant proteins are often, but not always, incomplete sources of
+              protein, but plants provide plenty of nutrients, fiber, and
+              antioxidants
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- JavaScript Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
