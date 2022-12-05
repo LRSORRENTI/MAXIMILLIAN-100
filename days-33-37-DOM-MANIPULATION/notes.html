@@ -23,6 +23,11 @@
         justify-content: center;
         font-weight: bold;
       }
+      code{
+        font-size: 1rem;
+        font-weight: bold;
+        margin-top: 7px;
+      }
       h2 {
         display: flex;
         justify-content: center;
@@ -304,6 +309,20 @@
             <code>
             getElementsByName      |   Y   | NodeList       |  O(1)
             </code>
+    </div>
+
+    <div class="container">
+        <p>
+            The main advantage of things like document.getElementById() and 
+            document.querySelector() is that we don't need to delve as deeply 
+            into the depths of the DOM tree, we can individually or group select 
+            HTML elements using class names and id's
+        </p>
+        <p>
+            These will serve as the primary ways we'll traverse the DOM, 
+            it's important to remember how to drill into elements as a practice,
+            since it can illustrate the structure of the DOM at a deeper level
+        </p>
     </div>
   </body>
 </html>
