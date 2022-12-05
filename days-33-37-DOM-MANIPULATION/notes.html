@@ -153,5 +153,157 @@
             manipulate the DOM
         </p>
     </div>
+    <div class="container">
+        <h2>
+            Exploring the DOM
+        </h2>
+        <p>
+            The Document object, or the "document" property on the window, 
+            is our gateway to the DOM, to view some of these properties, 
+            we can use "console.dir(document)" and we'll be able to view 
+            in more detail everything accessible for DOM MANIPULATION
+        </p>
+        </div>
+        <div class="container">
+        <h2>
+            Drilling into the DOM to select and modify elements
+        </h2>
+        <p>
+            In this sections we're going to bend the DOM to our 
+            specifications by accessing elements inside of it with 
+            JavaScript
+        </p>
+        <p>
+         Max just showed an interesting thing, when we link 
+         our script in our html, it's normally placed at the very 
+         bottom of our body
+        </p>
+          <p>
+            However, we can use the boolean attribute 'defer' right after our "src=index.js" defer
+           </p>
+           <p>
+             This Boolean attribute is set to indicate to a browser
+              that the script is meant to be executed after the
+               document has been parsed, but before 
+               firing DOMContentLoaded.
+               </p>
+               <p>
+            Scripts with the defer attribute will prevent the
+             DOMContentLoaded event from firing until the script 
+             has loaded and finished evaluating.
+            </p>
+            <p>
+            This attribute must not be used if the src attribute is absent
+             (i.e. for inline scripts),
+             in this case it would have no effect.
+            </p>
+            <p>
+            To achieve a similar effect for dynamically inserted 
+            scripts use async="false" instead. Scripts with
+             the defer attribute will execute in the order
+              in which they appear in the document.
+          </p>
+    </div>
+    <div class="container">
+        <h2>
+            The DOM Tree
+        </h2>
+        <p>
+        The DOM itself is like a tree of nested JavaScript objects
+
+        </p>
+        <p>
+            The 'document' is like the top of the tree, then 
+            theres's the body and head which are branches on the same level, 
+            then below the body we have our elements which are all branches at 
+            the same level, then anything nested inside those h1, p, or 
+            whichever tag are another level below, and it's like that all the 
+            way down
+        </p>
+    </div>
+    <div class="container">
+        <h2>
+            "drilling into elements" vs Query selectors
+        </h2>
+        <p>
+            As we can see we can use things like:
+        </p>
+        <p>
+            document.body.children[1].children[0].href = 'https://google.com';
+        </p>
+        <p>
+            To drill deep into the DOM to select what we'd like, but there 
+            are easier ways to do this, with query selectors:
+        </p>
+        <p>
+            document.getElementById('some-id')
+        </p>
+        <p>
+            or
+        </p>
+        <p>
+            document.getElementByClassName('some-classname')
+        </p>
+        <p>
+            Or
+        </p>
+        <p>
+            document.querySelector('.some-class')
+        </p>
+    </div>
+    <div class="container">
+        <h2>
+            Main Differences
+        </h2>
+        <p>
+            querySelector* is more flexible, as you can pass it any CSS3 selector,
+             not just simple ones for id, tag, or class.
+        </p>
+        <p>
+            The performance of querySelector* changes with the size of the DOM that
+             it is invoked on. To be precise, querySelector* calls run in O(n) time 
+             and getElement* calls run in O(1) time, where n is the total number 
+            of all children of the element or document it is invoked on.
+        </p>
+        <p>
+            The return types of these calls vary. querySelector and 
+            getElementById both return a single element. querySelectorAll and 
+            getElementsByName both return NodeLists. The older 
+            getElementsByClassName and getElementsByTagName both return
+             HTMLCollections. NodeLists
+             and HTMLCollections are both referred to as collections of elements.
+        </p>
+        <p>
+            Collections can return "live" or "static" collections respectively. 
+            This is NOT reflected in the actual types that they return. getElements*
+             calls return live collections, and querySelectorAll returns a static 
+             collection. The way that I understand it, live collections contain 
+             references to elements in the DOM, and static collections contain 
+             copies of elements. Take a look at @Jan Feldmann's comment's below for
+              a different angle as well. I haven't figured out a good way to
+             incorporate it into my answer but it may be a more accurate 
+             understanding.
+        </p>
+        <code>Function               | Live? | Type           | Time Complexity
+            </code>
+            <code>
+            querySelector          |       | Element        |  O(n)
+            </code>
+            <code>
+            querySelectorAll       |   N   | NodeList       |  O(n)
+            </code>
+            <code>
+            getElementById         |       | Element        |  O(1)
+            </code>
+            <code>
+            getElementsByClassName |   Y   | HTMLCollection |  O(1)
+            </code>
+            <code>
+            getElementsByTagName   |   Y   | HTMLCollection |  O(1)
+            </code>
+            <code>
+            getElementsByName      |   Y   | NodeList       |  O(1)
+            </code>
+    </div>
   </body>
 </html>
