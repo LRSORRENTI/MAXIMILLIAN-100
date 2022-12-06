@@ -8,4 +8,9 @@ anchElement.href = 'https://yahoo.com';
 
 // anchElement = document.querySelector('#external-link');
 
-// anchElement = 'https://udemy.com'
+ anchElement.href = 'https://udemy.com'
+ 
+
+ anchElement = document.querySelector('a')
+
+ anchElement.href = 'https://github.com'
